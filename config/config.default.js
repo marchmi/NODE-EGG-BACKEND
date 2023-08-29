@@ -19,7 +19,7 @@ module.exports = appInfo => {
   config.middleware = [ 'addStatusCode', 'errorHandler' ];
 
   config.mongoose = {
-    url: process.env.EGG_MONGODB_URL || 'mongodb://127.0.0.1/flicker',
+    url: process.env.EGG_MONGODB_URL || 'mongodb://127.0.0.1/R',
     options: {
       // server: { // 为什么要去掉外层的server：https://segmentfault.com/q/1010000010447504
       // poolSize: 40, // 连接池数量：https://static2.cnodejs.org/topic/5b471c93e374eeab6929d657
