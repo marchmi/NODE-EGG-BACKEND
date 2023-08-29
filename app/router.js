@@ -11,4 +11,5 @@ module.exports = app => {
   router.get('/', controller.home.index); //  推荐egg-router-plus插件或者定义一个方法，自动载入某个文件夹下的路由进行注册
   require('./router/views')(app);
   require('./router/components')(app);
+  require('./router/attributes')(app);
 };
